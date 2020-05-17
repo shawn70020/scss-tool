@@ -1,0 +1,18 @@
+//此處的sass 可共用到其他專案，可直接修改值
+//容器部分 可設定寬度 但不加 padding 或 margin
+
+.g-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  @include r1200 {
+    width: 90% !important; }
+  @include r992 {
+    width: 87.5% !important;
+    @include r767 {
+      width: 93.6% !important; } } }
+
+.f-flex {
+  @include flex; }
+
+.mla {
+  margin-left: auto; }

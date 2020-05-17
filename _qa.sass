@@ -1,0 +1,105 @@
+.question {
+
+  &-banner {
+
+    picture {
+
+      img {
+        height: 304px;
+        @include r767 {
+          height: 143px;
+          object-position: center; } } }
+    &_content {
+      @include flex(flex-start);
+      text-align: left;
+      top: initial;
+      bottom: 0;
+      transform: translate(-50%,0); }
+
+    .banner_icon {
+      @include r992 {
+        width: 48px; }
+      @include r767 {
+        width: 24px; } } }
+
+
+  &_content {
+    padding: 5.5rem 0 9.75rem 0;
+    @include r992 {
+      padding: 2.5rem 0  6.5rem 0; }
+    @include r767 {
+      padding: 1.5rem 0  3.5rem 0; } }
+
+  .list {
+    &_title {
+      position: relative;
+      padding: 1.375rem 2.375rem;
+      font-size: px(20);
+      line-height: 1.75rem;
+      font-family: 'PingFang TC Semiboldotf';
+      border: 1px solid #000;
+      cursor: pointer;
+      @include r992 {
+        padding: 1rem 1.5rem;
+        font-size: px(16);
+        line-height: 1.375rem; }
+      @include r767 {
+        padding: 1rem 1rem; } }
+
+
+    &_text {
+      padding: 1.375rem 2.375rem;
+      font-family: 'PingFang TC Regular';
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+      display: none;
+      line-height: 1.5;
+      @include r992 {
+        padding: 1rem 1.5rem;
+        font-size: px(14); }
+      @include r767 {
+        padding: 1rem 1rem; } }
+
+    .mb1px {
+      border-bottom: 1px solid #000; } }
+
+  .arrow {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 34px;
+      right: 53px;
+      width: 15px;
+      height: 2px;
+      background: #000;
+      transform: rotate(-35deg);
+      transition: transform .5s;
+      @include r992 {
+        top: 26px;
+        right: 50px;
+        width: 11px; }
+      @include r767 {
+        right: 25px; } }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 34px;
+      right: 41px;
+      width: 15px;
+      height: 2px;
+      background: #000;
+      transform: rotate(35deg);
+      transition: transform .5s;
+      @include r992 {
+        top: 26px;
+        right: 41px;
+        width: 11px; }
+      @include r767 {
+        right: 16px; } } }
+
+
+  .arrow.active {
+    &::after {
+      transform: rotate(35deg); }
+    &::before {
+      transform: rotate(-35deg); } } }

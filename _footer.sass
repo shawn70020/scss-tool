@@ -1,0 +1,109 @@
+.footer {
+  &-wrap {
+    padding: 2rem 1.625rem 1.75rem 1.625rem;
+    @include r992 {
+      padding: 1.5rem 0; }
+    @include r767 {
+      padding: 1.5rem 0 1.25rem 0; } }
+  @include r767 {
+    position: relative; }
+
+  &_menu {
+    margin-bottom: 1rem;
+    @include flex;
+    @include r992 {
+      margin-bottom: 0.25rem; }
+    @include r767 {
+      position: absolute;
+      right: 3.2%;
+      top: 14px; } }
+  &_nav-btn {
+    padding: 1rem 1.5rem;
+    line-height: 1.375;
+    @include r992 {
+      padding: 1rem 1.25rem; }
+    @include r767 {
+      display: none; } }
+
+  .icon {
+    padding: 0;
+    padding: 0 1rem;
+    img {
+      @include r992 {
+        width: 24px; } }
+    @include r992 {
+      margin: 0;
+      padding: 0.625rem 0.75rem; } }
+
+
+  &_text {
+    @include flex(flex-start);
+    margin-bottom: 1rem;
+    font-family: 'Roboto-Regular';
+    font-size: px(36);
+    line-height: 1.5;
+
+    @include r992 {
+      margin-bottom: 0.625rem;
+      font-size: px(20); }
+    @include r767 {
+      margin-bottom: 0.5rem;
+      font-size: px(16); } }
+
+  .phone {
+    img {
+      margin-right: 1.5rem;
+      @include r992 {
+        width: 23px;
+        margin-right: 0.75rem; }
+      @include r767 {
+        width: 13px;
+        margin-right: 0.5rem; } } }
+
+  .email {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $w;
+    @include r992 {
+      margin-bottom: 0.625rem; }
+    @include r767 {
+      margin-bottom: 1rem; }
+    img {
+      margin-right: 0.75rem;
+      @include r992 {
+        width: 32px;
+        margin-right: 0.5rem; }
+      @include r767 {
+        width: 20px;
+        margin-bottom: 5px; } } }
+  .copyright {
+    margin: 0;
+    @include r767 {
+      position: initial;
+      display: block; }
+    .footer_nav-btn {
+      margin: 0;
+      font-family: 'PingFang TC Regular';
+      @include r992 {
+        padding: 1rem 0 1rem 0.75rem; }
+      @include r767 {
+        padding: 0.25rem 0;
+        display: block;
+        font-size: px(14); } }
+    &_text {
+      line-height: 1.3125;
+      font-family: 'Roboto-Regular';
+      @include r767 {
+        font-size: px(14);
+        margin-bottom: 4px; } } }
+  &-logo {
+    margin-right: 2.375rem;
+    @include r992 {
+      display: none; }
+    @include r767 {
+      display: block;
+      margin: 0;
+      position: absolute;
+      bottom: 20px;
+      right: 3.2%;
+      width: 46px; } } }

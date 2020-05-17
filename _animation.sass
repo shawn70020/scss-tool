@@ -1,0 +1,52 @@
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+
+.am-order1 {
+  @include delay(.5s); }
+.am-order2 {
+  @include delay(.6s); }
+.am-order3 {
+  @include delay(.7s); }
+.am-order4 {
+  @include delay(.8s); }
+.am-order5 {
+  @include delay(.9s); }
+.am-order6 {
+  @include delay(1s); }
+.am-order7 {
+  @include delay(1.1s); }
+.am-order8 {
+  @include delay(1.2s); }
+.am-order9 {
+  @include delay(1.3s); }
+.am-order10 {
+  @include delay(1.8s); }
+.am-order11 {
+  @include delay(2.5s); }

@@ -1,0 +1,70 @@
+
+h1 {
+  a {
+    @include imgReplaceText;
+    @include size(80px,49px);
+    background-size: cover !important;
+
+    @include r767 {
+      @include size(48px,30px);
+      margin: 0.625rem 0; } } }
+
+
+.header {
+  @include flex(space-between,center);
+  padding: 0 2.916% 0 4.583%;
+
+  @include r992 {
+    padding: 0 6.25%;
+    padding: 0 3.645% 0 6.25%; }
+  @include r767 {
+    @include flex;
+    padding: 0;
+    position: relative; }
+
+  .m-hamburger {
+    @include abpos(50%,0.5rem);
+    transform: translateY(-50%); }
+
+  &_list {
+
+    @include r767 {
+      @include abpos(100%,0);
+      width: 100%;
+      flex-direction: column;
+      display: none;
+      z-index: $z2; }
+
+    li {
+      @include r767 {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid $w; }
+      a {
+        position: relative;
+        line-height: 1.4;
+        padding: 0.625rem;
+        margin: 1.875rem 1.375rem;
+        font-size: px(20);
+        font-family: 'PingFang TC Regular';
+        @include r992 {
+          margin: 1.875rem 0.625rem; }
+        @include r767 {
+          padding: 1rem 0;
+          margin: 0; }
+        &:hover {
+          &::after {
+            width: 100%;
+            @include r767 {
+              width: 0; } } }
+        &::after {
+          @include size(0,2px);
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          content: '';
+          background: $w;
+          transition: width .5s; } } } } }
+
+

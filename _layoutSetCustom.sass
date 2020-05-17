@@ -1,0 +1,102 @@
+// 這邊為客製化的設定 主要是間距部分
+
+// 容器
+.mainc {
+  padding: 4rem 0 5rem 0;
+  @include r992 {
+    padding: 2.5rem 0; }
+  @include r767 {
+    padding: 1.5rem 0; } }
+
+// 物件
+
+.title {
+  text-align: center;
+  margin-bottom: 3.75rem;
+  font-family: 'PingFang TC Semiboldotf';
+  font-size: px(48);
+  line-height: 1.3958333;
+  @include r992 {
+    margin-bottom: 2rem;
+    font-size: px(32);
+    line-height: 1.40625; }
+  @include r767 {
+    margin-bottom: 1rem;
+    font-size: px(24);
+    line-height: 1.375; } }
+
+.title-p {
+  font-family: 'PingFang TC Medium';
+  margin-bottom: 1rem;
+  font-size: px(32);
+  line-height: 1.40625;
+  @include r992 {
+    margin-bottom: 2rem;
+    font-size: px(28);
+    line-height: 1.428; }
+  @include r767 {
+    margin-bottom: 1rem;
+    font-size: px(20);
+    line-height: 1.4; } }
+
+.card {
+  @include r992 {
+    margin-bottom: 1.5rem; }
+  @include r767 {
+    margin-bottom: 1rem; }
+  &_img {
+    width: 100%; }
+  &_body {
+    padding: 1rem;
+    border: 1px solid $wd;
+    background: $w; }
+  &_title {
+    margin-bottom: 1rem; }
+  &_text {
+    line-height: 1.5;
+    margin-bottom: 1rem; } }
+
+
+////////////顏色
+
+//間距
+
+.pl0.pl0 {
+  padding-left: 0; }
+.pr0.pr0.pr0 {
+  padding-right: 0; }
+//灰階
+
+.filter {
+  filter: grayscale(100%); }
+
+// ----文字----
+.c_t-red {
+  color: $r; }
+
+.c_t-red6 {
+  color: $r6; }
+
+.c_t-white {
+  color: $w; }
+
+.c_t-black2 {
+  color: $b2; }
+
+.c_t-black7 {
+  color: $b7; }
+
+
+// ----背景----
+.c_b-red {
+  background: $r; }
+
+.c_b-white {
+  background: $w; }
+
+.c_b-whitef {
+  background: $wf; }
+
+.c_b-whiteb {
+  background: $wb; }
+

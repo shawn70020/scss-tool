@@ -1,0 +1,24 @@
+// 共用性組件
+
+
+.m-hamburger {
+  @include size(40px,40px);
+  display: none;
+  flex-direction: column;
+  @include rwd(767) {
+    @include flex(center,center); }
+  .line {
+    @include size(22px,2px);
+    background: $w;
+    margin: 0 0 3px 0;
+    transition: transform .5s; }
+  &.active {
+    .line {
+      position: absolute; }
+    .line:nth-child(2) {
+      display: none; }
+    .line:nth-child(1) {
+      transform: rotate(45deg); }
+    .line:nth-child(3) {
+      transform: rotate(-45deg); } } }
+

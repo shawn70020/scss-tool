@@ -1,0 +1,522 @@
+
+.banner {
+  position: relative;
+  picture {
+    img {
+      @include size(100%,840px);
+      object-fit: cover;
+      @include r767 {
+        object-position: left center;
+        height: 394px; } } }
+  &_content {
+    @include poac;
+    width: 100%;
+    text-align: right;
+    font-family: 'PingFang TC Medium'; }
+
+  &_msg {
+      font-size: px(36);
+      line-height: 1.388889;
+      @include r992 {
+        font-size: px(20);
+        line-height: 1.4; }
+      @include r767 {
+        font-size: px(16); } }
+  &_slogan {
+    font-size: px(64);
+    line-height: 1.40625;
+    @include r992 {
+      font-size: px(48);
+      line-height: 1.3958333; }
+    @include r767 {
+      font-size: px(32); } } }
+
+.service {
+
+  .mainc {
+    @include r767 {
+      padding: 2rem 0 1.75rem 0; } }
+  .title {
+    @include r767 {
+      margin-bottom: 2rem; } }
+  .list {
+    @include flex(space-between,flex-start);
+    flex-wrap: wrap;
+    &_wrap {
+      @include flex;
+      width: 23.5%;
+      padding: 0 3%;
+      flex-direction: column;
+
+      @include r992 {
+        width: 48.2%;
+        padding: 0 7.44%;
+        margin-bottom: 2.5rem; }
+      @include r767 {
+        width: 100%;
+        padding: 0 18.233%;
+        margin-bottom: 1.75rem; } }
+    &_img {
+      @include size(100px,100px);
+      margin-bottom: 2.5rem;
+      @include r992 {
+        @include size(80px,80px);
+        margin-bottom: 1rem; } }
+    &_title {
+      margin-bottom: 0.25rem;
+      font-size: px(24);
+      font-family: 'PingFang TC Medium';
+      line-height: 1.375;
+      @include r992 {
+        font-size: px(20);
+        margin-bottom: 0.5rem; } }
+    &_text {
+      font-family: 'PingFang TC Regular';
+      line-height: 1.5; } } }
+
+.Classic {
+  .mainc {
+    @include r1200 {
+      width: 87.5%; } }
+  .list {
+    &_wrap {
+      @include flex(flex-start);
+      margin-bottom: 2rem;
+
+      @include r992 {
+        margin-bottom: 0.5rem; }
+      @include r767 {
+        position: relative; }
+      &:nth-last-child(1) {
+        margin-bottom: 0; }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        @include r992 {
+          flex-direction: initial; }
+        .list_img {
+          margin: 0 0 0 2%;
+          @include r992 {
+            margin: 0; } } } }
+
+
+
+    &_img {
+      width: 66%;
+      margin-right: 2%;
+      transition: filter .3s;
+      @include r992 {
+        width: 61%;
+        margin: 0; }
+      @include r767 {
+        width: 100%; }
+
+      &:hover {
+        filter: none; } }
+
+
+
+
+    &_title {
+      @include flex;
+      font-size: px(48);
+      font-family: 'Roboto-BlackItalic';
+
+
+      @include r992 {
+        width: 39%;
+        font-size: px(28);
+        margin-left: 1.4%; }
+      @include r767 {
+        @include poac;
+        margin: 0;
+        color: $w; }
+
+      img {
+        margin-right: 1.2%;
+        @include r992 {
+          @include size(32px,32px); }
+        @include r767 {
+          filter: brightness(500); } } } } }
+
+.Joint {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  .mainc {
+    padding-bottom: 30rem;
+    @include r992 {
+      padding-bottom: 26rem; }
+    @include r767 {
+      padding-bottom: 11.8125rem; } }
+  &-t {
+    max-width: 1540px;
+    margin: 0 auto 3.75rem auto;
+    @include flex(space-between,flex-start);
+    @include r1200 {
+      width: 90%; }
+    @include r992 {
+      margin: 0 auto 2.5rem auto;
+      width: 87.5%; }
+    @include r767 {
+      width: 93.6%;
+      margin: 0 auto 1.25rem auto; }
+
+    .left {
+      width: 37.3%;
+      @include r767 {
+        width: 47.7%; } }
+    .right {
+      width: 62.2%;
+      @include r767 {
+        width: 51.68%; }
+      &_t {
+        margin-bottom: 0.5rem;
+        @include r767 {
+          margin-bottom: 0.125rem; } }
+      &_b {
+        @include flex(space-between);
+
+        @include r767 {
+          flex-direction: column-reverse;
+          align-items: flex-start; }
+        &_l {
+          width: 13.78%;
+          @include r767 {
+            width: 21%; } }
+        &_r {
+          width: 85.38%;
+          @include flex(flex-start);
+          flex-direction: column;
+
+          @include r767 {
+            width: 100%;
+            position: relative; }
+          &_t {
+            margin-bottom: 0.5rem;
+            @include r992 {
+              margin: 0; }
+            @include r767 {
+              margin-bottom: 0.125rem; } }
+          &_b {
+            width: 100%;
+            @include flex(flex-end);
+            @include r767 {
+              @include flex((flex-start));
+              width: 79%;
+              position: absolute;
+              left: 22%;
+              top: 177%; } } } } }
+
+    .box {
+      width: 31.66%;
+      transform: translateX(-32.4%);
+      background: #F6C600;
+      padding-bottom: 20.5%;
+      @include rwd(1500) {
+        width: 41.3%; }
+      @include r767 {
+        transform: translateX(0);
+        width: 60.35%;
+        padding-bottom: 38%; }
+      &_btn {
+        @include abpos(50%,10.8%);
+        width: 121.6%;
+        padding-bottom: 40.54%;
+        transform: translateY(-50%);
+        background: $w;
+        @include r767 {
+          padding-bottom: 48%;
+          width: 152%; }
+
+        &:hover {
+          .arrow {
+            right: 4%;
+            @include r992 {
+              right: 6%; } }
+          .copytext {
+            &:nth-child(2) {
+              transform: translateY(-140px);
+              opacity: .5;
+              @include r992 {
+                transform: translateY(-50%); } }
+            &:nth-child(3) {
+              transform: translateY(-200px);
+              opacity: .5;
+              @include r992 {
+                transform: translateY(-50%); } } } }
+        .copytext {
+          font-size: px(72);
+          line-height: 1.319444;
+          font-family: 'Roboto-Bold';
+          position: absolute;
+          left: 10%;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: transform .8s;
+          @include r992 {
+            font-size: px(40);
+            line-height: 1.325; }
+          @include r767 {
+            font-size: px(26); } }
+
+
+        .arrow {
+          display: block;
+          width: 40px;
+          height: 5px;
+          background: $b;
+          position: absolute;
+          right: 7.6%;
+          top: 50%;
+          transform:translateY(-50%) {}
+          transition: right .8s;
+          @include r992 {
+            width: 27px;
+            height: 3px;
+            right: 7%; }
+          @include r767 {
+            width: 16px;
+            height: 2px;
+            right: 16%; }
+          &::after {
+            content: '';
+            width: 27px;
+            height: 5px;
+            background: $b;
+            position: absolute;
+            right: -9%;
+
+            top: -8px;
+            transform: rotate(45deg);
+
+            @include r992 {
+              width: 17px;
+              height: 3px;
+              right: -5%;
+              top: -5px; }
+            @include r767 {
+              width: 10px;
+              height: 2px;
+              top: -3px; } }
+          &::before {
+            content: '';
+            width: 27px;
+            height: 5px;
+            background: $b;
+            position: absolute;
+            right: -9%;
+
+            top: 8px;
+            transform: rotate(-45deg);
+
+            @include r992 {
+              width: 17px;
+              height: 3px;
+              right: -5%;
+              top: 5px; }
+            @include r767 {
+              width: 10px;
+              height: 2px;
+              top: 3px; } } } } } }
+
+  &-b {
+    @include flex(space-between);
+    flex-wrap: wrap;
+    .block {
+      width: 48.75%;
+      position: relative;
+      @include r992 {
+        width: 48.21%;
+        height: 280px;
+        overflow: hidden; }
+      @include r767 {
+        margin-bottom: 1.25rem;
+        width: 100%;
+ }        // height: auto
+      &_text {
+        @include poac;
+        @include size(100%,100%);
+        @include flex;
+        color: $r;
+        font-size: px(72);
+        line-height: 1.319444;
+        font-family: 'Roboto-Bold';
+        background: rgba(255, 255, 255, .5);
+        @include r992 {
+          font-size: px(32); } }
+      &_img {
+        width: 100%;
+        @include r992 {
+          object-fit: cover; } } } } }
+
+.customer {
+  margin-top: -400px;
+  @include r992 {
+    margin-top: -416px; }
+  @include r767 {
+    margin-top: -189px; }
+  .mainc {
+    @include r992 {
+      padding-bottom: 1rem; }
+    @include r767 {
+      padding: 0.25rem 0 0.5rem 0; } }
+  .title {
+    @include r767 {
+      font-size: px(20); } }
+  .list {
+    @include flex(space-between);
+    flex-wrap: wrap; }
+  .card {
+    width: 23.5%;
+    @include r992 {
+      width: 48.21%; }
+    @include r767 {
+      width: 100%; }
+    &_img {
+      @include r992 {
+        height: 256px;
+        object-fit: cover; } }
+    &_title {
+      line-height: 1.3125;
+      font-family: 'Roboto-Medium'; }
+    &_text {
+      font-family: 'Roboto-Regular'; } }
+
+  .mark {
+    line-height: 1.3125;
+    font-family: 'Roboto-Regular'; } }
+
+.contact {
+
+  .title {
+    margin-bottom: 1.5rem;
+    @include r992 {
+      margin-bottom: 1rem; }
+    @include r767 {
+      margin-bottom: 0.5rem; } }
+  &-wrap {
+    // width: 41.25%
+    max-width: 792px;
+    margin: 0 auto;
+    padding-bottom: 5.75rem;
+    @include r992 {
+      width: 64.84%;
+      padding-bottom: 3.5rem; }
+
+    @include r767 {
+      width: 87.2%;
+      padding-bottom: 3rem; } }
+
+  .text {
+    margin-bottom: 1.25rem;
+    font-family: 'PingFang TC Regular';
+    font-size: px(20);
+    line-height: 1.5;
+    @include r992 {
+      font-size: px(16);
+      margin-bottom: 1rem; }
+    @include r767 {
+      margin-bottom: 0.5rem; } }
+  &_form {
+    label,input,textarea {
+      width: 100%;
+      font-family: 'PingFang TC Regular'; }
+    label {
+      line-height: 1.375;
+      margin-bottom: 0.25rem;
+      display: block;
+      @include r767 {
+        margin-bottom: 0.125rem; } }
+    input,textarea {
+      padding: 14px 16px;
+      line-height: 1.375;
+      margin-bottom: 1rem;
+      border: 1px solid $b;
+      box-sizing: border-box;
+      @include r992 {
+        margin-bottom: 0.75rem; }
+      @include r767 {
+        padding: 6px 16px; } }
+    input::placeholder {
+      color: rgba(0,0,0,.2); }
+    textarea::placeholder {
+      color: rgba(0,0,0,.2); }
+    textarea {
+      height: 8.5rem;
+      resize: none;
+      @include r767 {
+        height: 6.25rem; } } }
+  .input-group {
+    display: flex;
+    margin-bottom: 2.625rem;
+    @include r992 {
+      margin-bottom: 1.5rem; }
+    @include r767 {
+      margin-bottom: 1.25rem; }
+    input {
+      width: initial;
+      transform: translate(-12px, 8px);
+      z-index: $z2;
+      opacity: 0;
+      &:checked+p::after {
+        opacity: 1; }
+      @include r992 {
+        transform: translate(-14px, -4px); }
+      @include r767 {
+        transform: translate(-5px, -4px); } }
+    label {
+      margin-left: 1.25rem;
+      position: relative;
+      @include flex(flex-start);
+      @include r767 {
+        margin-left: 0.75rem; } }
+    .tick {
+      @include r767 {
+        font-size: px(14); }
+      &::after {
+        @include size(5px,10px);
+        position: absolute;
+        top: 9px;
+        left: -10px;
+        display: block;
+        content: "";
+        border-bottom: 2px solid #000;
+        border-right: 2px solid #000;
+        transform: rotate(45deg);
+        transition: all .5s;
+        opacity: 0;
+        @include r992 {
+          top: 4px; }
+        @include r767 {
+          top: 1px;
+          left: -2px; } }
+      &::before {
+        @include size(16px,16px);
+        position: absolute;
+        top: 7px;
+        left: -16px;
+        display: block;
+        pointer-events: none;
+        content: "";
+        background-color: $wb;
+        border: 2px solid $b;
+        @include r992 {
+          top: 2px; }
+        @include r767 {
+          @include size(13px,13px);
+          top: 1px;
+          left: -6px;
+          border: 1px solid $b; } } } }
+  .contact_submit {
+    @include size(180px,54px);
+    margin: 0 auto;
+    display: block;
+    transition: background .3s;
+    cursor: pointer;
+    border: 0;
+    @include r992 {
+      @include size(136px,36px);
+      padding: 0; }
+    &:hover {
+      background: $r6; } } }
